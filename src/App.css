@@ -1,0 +1,45 @@
+.calender-container{
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.custom-calender{
+  padding: 50px;
+}
+
+.custom-calender .rmdp-full-year{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.rmdp-header{
+  margin-bottom: 20px;
+}
+
+.rmdp-header-values{
+  font-size: 48px;
+}
+
+.rmdp-arrow-container{
+  margin: 0 30px;
+  width: 20px;
+  height: 20px;
+}
+
+.rmdp-arrow-container i{
+  width: 10px;
+  height: 10px;
+}
+
+.rmdp-month-name{
+  font-size: 22px;
+}
+
+
+@media only screen and (max-width: 500px){
+  .custom-calender .rmdp-full-year{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
